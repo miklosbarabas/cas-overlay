@@ -1,2 +1,2 @@
 # cas-overlay
-Jasig (v4.2.1)CAS overlay with DB authentication handler
+Jasig CAS (v4.2.1) overlay with DB authentication handler
