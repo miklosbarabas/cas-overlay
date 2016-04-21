@@ -1,0 +1,22 @@
+{
+  "@class" : "org.jasig.cas.services.RegexRegisteredService",
+  "serviceId" : "^https?://localhost.*",
+  "name" : "localhost",
+  "id" : 2,
+  "evaluationOrder" : 0,
+  "logoutType" : "BACK_CHANNEL",
+  "description" : "Allows only localhost services",
+  "attributeReleasePolicy" : {
+    "@class" : "org.jasig.cas.services.ReturnAllowedAttributeReleasePolicy",
+    "principalAttributesRepository" : {
+      "@class" : "org.jasig.cas.authentication.principal.DefaultPrincipalAttributesRepository"
+    },
+    "authorizedToReleaseCredentialPassword" : true,
+    "authorizedToReleaseProxyGrantingTicket" : false
+  },
+  "publicKey" : {
+    "@class" : "org.jasig.cas.services.RegisteredServicePublicKeyImpl",
+    "location" : "classpath:public.key",
+    "algorithm" : "RSA"
+  }
+}

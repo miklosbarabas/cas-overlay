@@ -1,0 +1,143 @@
+2016-04-21 09:31:21,476 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - <Removed cookie with name [TGC]>
+2016-04-21 09:31:21,477 DEBUG [org.jasig.cas.web.WarningCookieRetrievingCookieGenerator] - <Removed cookie with name [CASPRIVACY]>
+2016-04-21 09:31:25,150 DEBUG [org.jasig.cas.web.support.CookieRetrievingCookieGenerator] - <Removed cookie with name [TGC]>
+2016-04-21 09:31:25,151 DEBUG [org.jasig.cas.web.WarningCookieRetrievingCookieGenerator] - <Removed cookie with name [CASPRIVACY]>
+2016-04-21 09:31:25,204 DEBUG [org.jasig.cas.web.support.DefaultArgumentExtractor] - <Created http://localhost:6666/ based on org.jasig.cas.authentication.principal.WebApplicationServiceFactory@44957c30>
+2016-04-21 09:31:25,204 DEBUG [org.jasig.cas.web.support.DefaultArgumentExtractor] - <Extractor generated service for: http://localhost:6666/>
+2016-04-21 09:31:26,309 DEBUG [org.jasig.cas.util.CasSpringBeanJobFactory] - <Created job org.jasig.cas.services.DefaultServicesManagerImpl$ServiceRegistryReloaderJob@29327e3a for bundle org.quartz.spi.TriggerFiredBundle@131fd049>
+2016-04-21 09:31:26,314 DEBUG [org.jasig.cas.util.CasSpringBeanJobFactory] - <Autowired job per the application context>
+2016-04-21 09:31:26,316 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - <Reloading registered services.>
+2016-04-21 09:31:26,322 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - <Adding registered service ^https?://localhost.*>
+2016-04-21 09:31:26,323 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - <Adding registered service ^(https|imaps)://.*>
+2016-04-21 09:31:26,323 DEBUG [org.jasig.cas.services.DefaultServicesManagerImpl] - <Adding registered service ^(bvapp)://.*>
+2016-04-21 09:31:26,323 INFO [org.jasig.cas.services.DefaultServicesManagerImpl] - <Loaded 3 services from JsonServiceRegistryDao.>
+Apr 21, 2016 9:31:29 AM com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager
+INFO: Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 6, acquireRetryAttempts -> 5, acquireRetryDelay -> 2000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 10000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1bqygwn9gfgo42p1ct70wk|5af7e2f, debugUnreturnedConnectionStackTraces -> true, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1bqygwn9gfgo42p1ct70wk|5af7e2f, idleConnectionTestPeriod -> 30, initialPoolSize -> 6, jdbcUrl -> jdbc:oracle:thin:@dbserver:1555:TEST, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 120, maxPoolSize -> 18, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 6, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 1, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2016-04-21 09:31:29,499 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - <QueryDatabaseAuthenticationHandler successfully authenticated myusername>
+2016-04-21 09:31:29,499 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - <Attempting to resolve a principal...>
+2016-04-21 09:31:29,500 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - <Creating SimplePrincipal for [myusername]>
+2016-04-21 09:31:29,500 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - <Principal id [myusername] could not be found>
+2016-04-21 09:31:29,500 DEBUG [org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver] - <Retrieved [3] attribute(s) from the repository>
+2016-04-21 09:31:29,503 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - <org.jasig.cas.authentication.principal.PersonDirectoryPrincipalResolver@25814d3c resolved myusername from myusername>
+2016-04-21 09:31:29,507 INFO [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - <Authenticated myusername with credentials [myusername].>
+2016-04-21 09:31:29,508 DEBUG [org.jasig.cas.authentication.PolicyBasedAuthenticationManager] - <Attribute map for myusername: {uid=uid, eduPersonAffiliation=eduPersonAffiliation, memberOf=[faculty, staff, org]}>
+2016-04-21 09:31:29,509 DEBUG [org.jasig.cas.audit.spi.TicketOrCredentialPrincipalResolver] - <Resolving argument [AuthenticationTransaction] for audit>
+2016-04-21 09:31:29,510 DEBUG [org.jasig.cas.audit.spi.TicketOrCredentialPrincipalResolver] - <Resolving argument [UsernamePasswordCredential] for audit>
+2016-04-21 09:31:29,511 INFO [org.jasig.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: myusername
+WHAT: Supplied credentials: [myusername]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Thu Apr 21 09:31:29 CEST 2016
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>
+2016-04-21 09:31:29,511 DEBUG [org.jasig.cas.authentication.DefaultAuthenticationTransactionManager] - <Successful authentication; Collecting authentication result [org.jasig.cas.authentication.ImmutableAuthentication@f895712c]>
+2016-04-21 09:31:29,512 DEBUG [org.jasig.cas.authentication.DefaultAuthenticationTransactionManager] - <Transaction ignored since there are no credentials to authenticate>
+2016-04-21 09:31:29,512 DEBUG [org.jasig.cas.authentication.DefaultAuthenticationContextBuilder] - <Collecting authentication history based on [1] authentication events>
+2016-04-21 09:31:29,512 DEBUG [org.jasig.cas.authentication.DefaultAuthenticationContextBuilder] - <Evaluating authentication principal [myusername] for inclusion in context>
+2016-04-21 09:31:29,513 DEBUG [org.jasig.cas.authentication.DefaultAuthenticationContextBuilder] - <Collected principal attributes [{uid=uid, memberOf=[faculty, staff, org], eduPersonAffiliation=eduPersonAffiliation}] for inclusion in context for principal [myusername]>
+2016-04-21 09:31:29,513 DEBUG [org.jasig.cas.authentication.DefaultAuthenticationContextBuilder] - <Collected single authentication attribute [authenticationMethod] -> [QueryDatabaseAuthenticationHandler]>
+2016-04-21 09:31:29,513 DEBUG [org.jasig.cas.authentication.DefaultAuthenticationContextBuilder] - <Collected single authentication attribute [successfulAuthenticationHandlers] -> [[QueryDatabaseAuthenticationHandler]]>
+2016-04-21 09:31:29,513 DEBUG [org.jasig.cas.authentication.DefaultAuthenticationContextBuilder] - <Finalized authentication attributes [{authenticationMethod=QueryDatabaseAuthenticationHandler, successfulAuthenticationHandlers=[QueryDatabaseAuthenticationHandler]}] for inclusion in authentication context>
+2016-04-21 09:31:29,521 DEBUG [org.jasig.cas.authentication.DefaultPrincipalElectionStrategy] - <Nominated [myusername] as the primary principal>
+2016-04-21 09:31:29,521 DEBUG [org.jasig.cas.authentication.DefaultAuthenticationContextBuilder] - <Determined primary authentication principal to be [myusername]>
+2016-04-21 09:31:29,522 DEBUG [org.jasig.cas.authentication.DefaultAuthenticationContextBuilder] - <Collected authentication attributes for this context are [{authenticationMethod=QueryDatabaseAuthenticationHandler, successfulAuthenticationHandlers=[QueryDatabaseAuthenticationHandler]}]>
+2016-04-21 09:31:29,522 DEBUG [org.jasig.cas.authentication.DefaultAuthenticationContextBuilder] - <Authentication context commenced at [2016-04-21T09:31:29.522+02:00]>
+2016-04-21 09:31:29,522 DEBUG [org.jasig.cas.authentication.DefaultAuthenticationContextBuilder] - <Building an authentication context for authentication org.jasig.cas.authentication.ImmutableAuthentication@b931e05 and service null>
+2016-04-21 09:31:29,537 DEBUG [org.jasig.cas.ticket.registry.DefaultTicketRegistry] - <Added ticket [TGT-1-KXdPPcgKLu2Nc9hYh23oRNPDXUWxpX9ogmZdhcJzhqLYlMYoWp-mycas] to registry.>
+2016-04-21 09:31:29,539 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - <Publishing org.jasig.cas.support.events.CasTicketGrantingTicketCreatedEvent@79a94e0e[ticketGrantingTicket=TGT-1-KXdPPcgKLu2Nc9hYh23oRNPDXUWxpX9ogmZdhcJzhqLYlMYoWp-mycas]>
+2016-04-21 09:31:29,539 DEBUG [org.jasig.cas.audit.spi.TicketOrCredentialPrincipalResolver] - <Resolving argument [DefaultAuthenticationContext] for audit>
+2016-04-21 09:31:29,540 INFO [org.jasig.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: TGT-1-KXdPPcgKLu2Nc9hYh23oRNPDXUWxpX9ogmZdhcJzhqLYlMYoWp-mycas
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Thu Apr 21 09:31:29 CEST 2016
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>
+2016-04-21 09:31:31,620 DEBUG [org.jasig.cas.util.CasSpringBeanJobFactory] - <Created job org.jasig.cas.ticket.registry.DefaultTicketRegistry@264eaed2 for bundle org.quartz.spi.TriggerFiredBundle@682d1e97>
+2016-04-21 09:31:31,624 DEBUG [org.jasig.cas.util.CasSpringBeanJobFactory] - <Autowired job per the application context>
+2016-04-21 09:31:31,627 INFO [org.jasig.cas.ticket.registry.DefaultTicketRegistry] - <Beginning ticket cleanup...>
+2016-04-21 09:31:31,632 INFO [org.jasig.cas.ticket.registry.DefaultTicketRegistry] - <0 expired tickets found and removed.>
+2016-04-21 09:31:35,881 DEBUG [org.jasig.cas.ticket.registry.DefaultTicketRegistry] - <Attempting to retrieve ticket [TGT-1-KXdPPcgKLu2Nc9hYh23oRNPDXUWxpX9ogmZdhcJzhqLYlMYoWp-mycas]>
+2016-04-21 09:31:35,882 DEBUG [org.jasig.cas.ticket.registry.DefaultTicketRegistry] - <Ticket [TGT-1-KXdPPcgKLu2Nc9hYh23oRNPDXUWxpX9ogmZdhcJzhqLYlMYoWp-mycas] found in registry.>
+2016-04-21 09:31:35,882 DEBUG [org.jasig.cas.authentication.DefaultAuthenticationContextBuilder] - <Collecting authentication history based on [1] authentication events>
+2016-04-21 09:31:35,882 DEBUG [org.jasig.cas.authentication.DefaultAuthenticationContextBuilder] - <Evaluating authentication principal [myusername] for inclusion in context>
+2016-04-21 09:31:35,883 DEBUG [org.jasig.cas.authentication.DefaultAuthenticationContextBuilder] - <Collected principal attributes [{uid=uid, memberOf=[faculty, staff, org], eduPersonAffiliation=eduPersonAffiliation}] for inclusion in context for principal [myusername]>
+2016-04-21 09:31:35,883 DEBUG [org.jasig.cas.authentication.DefaultAuthenticationContextBuilder] - <Collected single authentication attribute [authenticationMethod] -> [QueryDatabaseAuthenticationHandler]>
+2016-04-21 09:31:35,883 DEBUG [org.jasig.cas.authentication.DefaultAuthenticationContextBuilder] - <Collected single authentication attribute [successfulAuthenticationHandlers] -> [[QueryDatabaseAuthenticationHandler]]>
+2016-04-21 09:31:35,883 DEBUG [org.jasig.cas.authentication.DefaultAuthenticationContextBuilder] - <Finalized authentication attributes [{authenticationMethod=QueryDatabaseAuthenticationHandler, successfulAuthenticationHandlers=[QueryDatabaseAuthenticationHandler]}] for inclusion in authentication context>
+2016-04-21 09:31:35,884 DEBUG [org.jasig.cas.authentication.DefaultPrincipalElectionStrategy] - <Nominated [myusername] as the primary principal>
+2016-04-21 09:31:35,884 DEBUG [org.jasig.cas.authentication.DefaultAuthenticationContextBuilder] - <Determined primary authentication principal to be [myusername]>
+2016-04-21 09:31:35,884 DEBUG [org.jasig.cas.authentication.DefaultAuthenticationContextBuilder] - <Collected authentication attributes for this context are [{authenticationMethod=QueryDatabaseAuthenticationHandler, successfulAuthenticationHandlers=[QueryDatabaseAuthenticationHandler]}]>
+2016-04-21 09:31:35,884 DEBUG [org.jasig.cas.authentication.DefaultAuthenticationContextBuilder] - <Authentication context commenced at [2016-04-21T09:31:35.884+02:00]>
+2016-04-21 09:31:35,885 DEBUG [org.jasig.cas.authentication.DefaultAuthenticationContextBuilder] - <Building an authentication context for authentication org.jasig.cas.authentication.ImmutableAuthentication@4eea6bf7 and service http://localhost:6666/>
+2016-04-21 09:31:35,886 DEBUG [org.jasig.cas.ticket.registry.DefaultTicketRegistry] - <Attempting to retrieve ticket [TGT-1-KXdPPcgKLu2Nc9hYh23oRNPDXUWxpX9ogmZdhcJzhqLYlMYoWp-mycas]>
+2016-04-21 09:31:35,887 DEBUG [org.jasig.cas.ticket.registry.DefaultTicketRegistry] - <Ticket [TGT-1-KXdPPcgKLu2Nc9hYh23oRNPDXUWxpX9ogmZdhcJzhqLYlMYoWp-mycas] found in registry.>
+2016-04-21 09:31:35,895 DEBUG [org.jasig.cas.authentication.principal.DefaultPrincipalAttributesRepository] - <DefaultPrincipalAttributesRepository will return the collection of attributes directly associated with the principal object>
+2016-04-21 09:31:35,896 DEBUG [org.jasig.cas.authentication.principal.DefaultPrincipalAttributesRepository] - <Found [3] cached attributes for principal [myusername]>
+2016-04-21 09:31:35,896 DEBUG [org.jasig.cas.services.DefaultRegisteredServiceAccessStrategy] - <No required attributes are specified>
+2016-04-21 09:31:35,897 DEBUG [org.jasig.cas.ticket.DefaultServiceTicketFactory] - <Looking up service ticket id generator for [org.jasig.cas.authentication.principal.SimpleWebApplicationServiceImpl]>
+2016-04-21 09:31:35,900 DEBUG [org.jasig.cas.ticket.registry.DefaultTicketRegistry] - <Added ticket [ST-1-1TwbPBz7NTd4gmKfyLFh-mycas] to registry.>
+2016-04-21 09:31:35,901 INFO [org.jasig.cas.CentralAuthenticationServiceImpl] - <Granted ticket [ST-1-1TwbPBz7NTd4gmKfyLFh-mycas] for service [http://localhost:6666/] and principal [myusername]>
+2016-04-21 09:31:35,903 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - <Publishing org.jasig.cas.support.events.CasServiceTicketGrantedEvent@2d796ec8[ticketGrantingTicket=TGT-1-KXdPPcgKLu2Nc9hYh23oRNPDXUWxpX9ogmZdhcJzhqLYlMYoWp-mycas,serviceTicket=ST-1-1TwbPBz7NTd4gmKfyLFh-mycas]>
+2016-04-21 09:31:35,904 DEBUG [org.jasig.cas.audit.spi.TicketOrCredentialPrincipalResolver] - <Resolving argument [String] for audit>
+2016-04-21 09:31:35,904 DEBUG [org.jasig.cas.ticket.registry.DefaultTicketRegistry] - <Attempting to retrieve ticket [TGT-1-KXdPPcgKLu2Nc9hYh23oRNPDXUWxpX9ogmZdhcJzhqLYlMYoWp-mycas]>
+2016-04-21 09:31:35,905 DEBUG [org.jasig.cas.ticket.registry.DefaultTicketRegistry] - <Ticket [TGT-1-KXdPPcgKLu2Nc9hYh23oRNPDXUWxpX9ogmZdhcJzhqLYlMYoWp-mycas] found in registry.>
+2016-04-21 09:31:35,907 INFO [org.jasig.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: myusername
+WHAT: ST-1-1TwbPBz7NTd4gmKfyLFh-mycas for http://localhost:6666/
+ACTION: SERVICE_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Thu Apr 21 09:31:35 CEST 2016
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>
+2016-04-21 09:31:35,937 DEBUG [org.jasig.cas.web.support.DefaultArgumentExtractor] - <Created http://localhost:6666/ based on org.jasig.cas.authentication.principal.WebApplicationServiceFactory@44957c30>
+2016-04-21 09:31:35,937 DEBUG [org.jasig.cas.web.support.DefaultArgumentExtractor] - <Extractor generated service for: http://localhost:6666/>
+2016-04-21 09:31:35,941 DEBUG [org.jasig.cas.ticket.registry.DefaultTicketRegistry] - <Attempting to retrieve ticket [ST-1-1TwbPBz7NTd4gmKfyLFh-mycas]>
+2016-04-21 09:31:35,942 DEBUG [org.jasig.cas.ticket.registry.DefaultTicketRegistry] - <Ticket [ST-1-1TwbPBz7NTd4gmKfyLFh-mycas] found in registry.>
+2016-04-21 09:31:35,944 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - <Attribute policy [org.jasig.cas.services.ReturnAllAttributeReleasePolicy@1fd476a2[attributeFilter=<null>,principalAttributesRepository=org.jasig.cas.authentication.principal.DefaultPrincipalAttributesRepository@48541a17[],authorizedToReleaseCredentialPassword=true,authorizedToReleaseProxyGrantingTicket=false]] is associated with service [id=2,name=localhost,description=Allows only localhost services,serviceId=^https?://localhost.*,usernameAttributeProvider=org.jasig.cas.services.DefaultRegisteredServiceUsernameProvider@d,theme=<null>,evaluationOrder=0,logoutType=BACK_CHANNEL,attributeReleasePolicy=org.jasig.cas.services.ReturnAllAttributeReleasePolicy@1fd476a2[attributeFilter=<null>,principalAttributesRepository=org.jasig.cas.authentication.principal.DefaultPrincipalAttributesRepository@48541a17[],authorizedToReleaseCredentialPassword=true,authorizedToReleaseProxyGrantingTicket=false],accessStrategy=org.jasig.cas.services.DefaultRegisteredServiceAccessStrategy@3ba74663[enabled=true,ssoEnabled=true,requireAllAttributes=true,requiredAttributes={},unauthorizedRedirectUrl=<null>,caseInsensitive=false],publicKey=org.jasig.cas.services.RegisteredServicePublicKeyImpl@4ed564b3[location=classpath:public.key,algorithm=RSA],proxyPolicy=org.jasig.cas.services.RefuseRegisteredServiceProxyPolicy@7288716e,logo=<null>,logoutUrl=<null>,requiredHandlers=[],properties={},<null>]>
+2016-04-21 09:31:35,945 DEBUG [org.jasig.cas.authentication.principal.DefaultPrincipalAttributesRepository] - <DefaultPrincipalAttributesRepository will return the collection of attributes directly associated with the principal object>
+2016-04-21 09:31:35,945 DEBUG [org.jasig.cas.authentication.principal.DefaultPrincipalAttributesRepository] - <Found [3] cached attributes for principal [myusername]>
+2016-04-21 09:31:35,945 DEBUG [org.jasig.cas.services.DefaultRegisteredServiceUsernameProvider] - <Returning the default principal id [myusername] for username.>
+2016-04-21 09:31:35,953 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - <Publishing org.jasig.cas.support.events.CasServiceTicketValidatedEvent@7147b3a2[assertion=org.jasig.cas.authentication.ImmutableAuthentication@b931e05:http://localhost:6666/,serviceTicket=ST-1-1TwbPBz7NTd4gmKfyLFh-mycas]>
+2016-04-21 09:31:35,960 DEBUG [org.jasig.cas.ticket.support.MultiTimeUseOrTimeoutExpirationPolicy] - <Ticket usage count 1 is greater than or equal to 1>
+2016-04-21 09:31:35,961 DEBUG [org.jasig.cas.ticket.registry.DefaultTicketRegistry] - <Attempting to retrieve ticket [ST-1-1TwbPBz7NTd4gmKfyLFh-mycas]>
+2016-04-21 09:31:35,961 DEBUG [org.jasig.cas.ticket.registry.DefaultTicketRegistry] - <Ticket [ST-1-1TwbPBz7NTd4gmKfyLFh-mycas] found in registry.>
+2016-04-21 09:31:35,961 DEBUG [org.jasig.cas.ticket.registry.DefaultTicketRegistry] - <Removing ticket [ST-1-1TwbPBz7NTd4gmKfyLFh-mycas] from the registry.>
+2016-04-21 09:31:35,962 DEBUG [org.jasig.cas.audit.spi.TicketOrCredentialPrincipalResolver] - <Resolving argument [String] for audit>
+2016-04-21 09:31:35,962 DEBUG [org.jasig.cas.ticket.registry.DefaultTicketRegistry] - <Attempting to retrieve ticket [ST-1-1TwbPBz7NTd4gmKfyLFh-mycas]>
+2016-04-21 09:31:35,962 DEBUG [org.jasig.cas.CentralAuthenticationServiceImpl] - <Ticket [ST-1-1TwbPBz7NTd4gmKfyLFh-mycas] by type [Ticket] cannot be found in the ticket registry.>
+2016-04-21 09:31:35,963 DEBUG [org.jasig.cas.audit.spi.TicketOrCredentialPrincipalResolver] - <Could not locate ticket [ST-1-1TwbPBz7NTd4gmKfyLFh-mycas] in the registry>
+2016-04-21 09:31:35,963 INFO [org.jasig.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - <Audit trail record BEGIN
+=============================================================
+WHO: audit:unknown
+WHAT: ST-1-1TwbPBz7NTd4gmKfyLFh-mycas
+ACTION: SERVICE_TICKET_VALIDATED
+APPLICATION: CAS
+WHEN: Thu Apr 21 09:31:35 CEST 2016
+CLIENT IP ADDRESS: 127.0.0.1
+SERVER IP ADDRESS: 127.0.0.1
+=============================================================
+
+>
+2016-04-21 09:31:35,972 DEBUG [org.jasig.cas.web.v3.V3ServiceValidateController] - <Successfully validated service ticket ST-1-1TwbPBz7NTd4gmKfyLFh-mycas for service [http://localhost:6666/]>
+2016-04-21 09:31:36,003 DEBUG [org.jasig.cas.web.view.Cas30ResponseView$Success] - <Preparing the output model to render view...>
+2016-04-21 09:31:36,007 DEBUG [org.jasig.cas.authentication.support.DefaultCasAttributeEncoder] - <Starting to encode attributes for release to service [http://localhost:6666/]>
+2016-04-21 09:31:36,009 DEBUG [org.jasig.cas.authentication.support.DefaultCasAttributeEncoder] - <[credential] is not available as a cached model attribute to encrypt...>
+2016-04-21 09:31:36,009 DEBUG [org.jasig.cas.authentication.support.DefaultCasAttributeEncoder] - <[proxyGrantingTicket] is not available as a cached model attribute to encrypt...>
+2016-04-21 09:31:36,010 DEBUG [org.jasig.cas.authentication.support.DefaultCasAttributeEncoder] - <[6] Encoded attributes are available for release to [http://localhost:6666/]>
+2016-04-21 09:32:26,304 DEBUG [org.jasig.cas.util.CasSpringBeanJobFactory] - <Created job org.jasig.cas.services.DefaultServicesManagerImpl$ServiceRegistryReloaderJob@4921441d for bundle org.quartz.spi.TriggerFiredBundle@49001678>
+2016-04-21 09:32:26,304 DEBUG [org.jasig.cas.util.CasSpringBeanJobFactory] - <Autowired job per the application context>
